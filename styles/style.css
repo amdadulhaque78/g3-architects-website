@@ -7,8 +7,8 @@
   font-family: "Work Sans", sans-serif;
 }
 
-.text-light-gray{
-    color: #727272;
+.text-light-gray {
+  color: #727272;
 }
 .btn-primary {
   border-radius: 8px;
@@ -22,10 +22,10 @@
 }
 
 .section-title {
-    font-size: 2.8rem;
-    font-weight: 700px;
-    color: #131313;
-  }
+  font-size: 2.8rem;
+  font-weight: 700px;
+  color: #131313;
+}
 
 /* header styles */
 header {
@@ -69,7 +69,6 @@ nav li a {
   margin-top: 20px;
 }
 
-
 main {
   max-width: 1440px;
   margin: 70px auto;
@@ -94,39 +93,63 @@ main {
   color: #727272;
   font-weight: 500;
 }
-.teams-title .text-features{
-    color: #FF900E;
-    font-weight: 700;
+.teams-title .text-features {
+  color: #ff900e;
+  font-weight: 700;
 }
 
+/* fact section style */
+.facts-card-container{
+  display: flex;
+  justify-content: space-around;
+}
+.facts-card-container .card {
+  border-radius: 8px;
+  border: 1px solid #ff900e;
+  text-align: center;
+  padding: 30px 30px;
+}
+.facts-card-container .card-title{
+  font-weight: 600;
+  font-size: 1.25rem;
+  margin-top: 5px;
 
 
+}
+.facts-card-container .card-stats{
+  font-size: 2.8rem;
+  color: #424242;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
 
 
 /* responsive media queries */
 /* mobile devices */
 @media screen and (max-width: 576px) {
-    header {
-      padding: 20px;
-    }
-    nav, .teams-container{
-      flex-direction: column;
-    }
+  header {
+    padding: 20px;
+  }
+  nav,
+  .teams-container {
+    flex-direction: column;
+  }
 
-    .teams-img-container{
-        grid-template-columns: 1fr;
-    }
-    .teams-content {
-        padding-left: 20px;
-        padding-right: 20px;
-      }
+  .teams-img-container {
+    grid-template-columns: 1fr;
   }
-  /* tablets or medium devices*/
-  @media screen and (min-width: 576px) and (max-width: 960px) {
-    header {
-      padding: 50px;
-    }
-    nav, .teams-container {
-      flex-direction: column;
-    }
+  .teams-content {
+    padding-left: 20px;
+    padding-right: 20px;
   }
+}
+/* tablets or medium devices*/
+@media screen and (min-width: 576px) and (max-width: 960px) {
+  header {
+    padding: 50px;
+  }
+  nav,
+  .teams-container {
+    flex-direction: column;
+  }
+}
